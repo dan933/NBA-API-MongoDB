@@ -1,0 +1,123 @@
+C:\Users\dnadi\Desktop\NBA PROJ\api\MongoApi\MongoApi\obj\Debug\net5.0\MongoApi.csprojAssemblyReference.cache
+C:\Users\dnadi\Desktop\NBA PROJ\api\MongoApi\MongoApi\obj\Debug\net5.0\MongoApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dnadi\Desktop\NBA PROJ\api\MongoApi\MongoApi\obj\Debug\net5.0\MongoApi.AssemblyInfoInputs.cache
+C:\Users\dnadi\Desktop\NBA PROJ\api\MongoApi\MongoApi\obj\Debug\net5.0\MongoApi.AssemblyInfo.cs
+C:\Users\dnadi\Desktop\NBA PROJ\api\MongoApi\MongoApi\obj\Debug\net5.0\MongoApi.csproj.CoreCompileInputs.cache
+C:\Users\dnadi\Desktop\NBA PROJ\api\MongoApi\MongoApi\obj\Debug\net5.0\MongoApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\dnadi\Desktop\NBA PROJ\api\MongoApi\MongoApi\obj\Debug\net5.0\MongoApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\dnadi\Desktop\NBA PROJ\api\MongoApi\MongoApi\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\dnadi\Desktop\NBA PROJ\api\MongoApi\MongoApi\bin\Debug\net5.0\appsettings.json
+C:\Users\dnadi\Desktop\NBA PROJ\api\MongoApi\MongoApi\bin\Debug\net5.0\MongoApi.exe
+C:\Users\dnadi\Desktop\NBA PROJ\api\MongoApi\MongoApi\bin\Debug\net5.0\MongoApi.deps.json
+C:\Users\dnadi\Desktop\NBA PROJ\api\MongoApi\MongoApi\bin\Debug\net5.0\MongoApi.runtimeconfig.json
+C:\Users\dnadi\Desktop\NBA PROJ\api\MongoApi\MongoApi\bin\Debug\net5.0\MongoApi.runtimeconfig.dev.json
+C:\Users\dnadi\Desktop\NBA PROJ\api\MongoApi\MongoApi\bin\Debug\net5.0\MongoApi.dll
+C:\Users\dnadi\Desktop\NBA PROJ\api\MongoApi\MongoApi\bin\Debug\net5.0\ref\MongoApi.dll
+C:\Users\dnadi\Desktop\NBA PROJ\api\MongoApi\MongoApi\bin\Debug\net5.0\MongoApi.pdb
+C:\Users\dnadi\Desktop\NBA PROJ\api\MongoApi\MongoApi\bin\Debug\net5.0\DnsClient.dll
+C:\Users\dnadi\Desktop\NBA PROJ\api\MongoApi\MongoApi\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\dnadi\Desktop\NBA PROJ\api\MongoApi\MongoApi\bin\Debug\net5.0\MongoDB.Bson.dll
+C:\Users\dnadi\Desktop\NBA PROJ\api\MongoApi\MongoApi\bin\Debug\net5.0\MongoDB.Driver.dll
+C:\Users\dnadi\Desktop\NBA PROJ\api\MongoApi\MongoApi\bin\Debug\net5.0\MongoDB.Driver.Core.dll
+C:\Users\dnadi\Desktop\NBA PROJ\api\MongoApi\MongoApi\bin\Debug\net5.0\MongoDB.Libmongocrypt.dll
+C:\Users\dnadi\Desktop\NBA PROJ\api\MongoApi\MongoApi\bin\Debug\net5.0\SharpCompress.dll
+C:\Users\dnadi\Desktop\NBA PROJ\api\MongoApi\MongoApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\dnadi\Desktop\NBA PROJ\api\MongoApi\MongoApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\dnadi\Desktop\NBA PROJ\api\MongoApi\MongoApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\dnadi\Desktop\NBA PROJ\api\MongoApi\MongoApi\bin\Debug\net5.0\runtimes\win\native\libzstd.dll
+C:\Users\dnadi\Desktop\NBA PROJ\api\MongoApi\MongoApi\bin\Debug\net5.0\runtimes\win\native\snappy32.dll
+C:\Users\dnadi\Desktop\NBA PROJ\api\MongoApi\MongoApi\bin\Debug\net5.0\runtimes\win\native\snappy64.dll
+C:\Users\dnadi\Desktop\NBA PROJ\api\MongoApi\MongoApi\bin\Debug\net5.0\runtimes\linux\native\libmongocrypt.so
+C:\Users\dnadi\Desktop\NBA PROJ\api\MongoApi\MongoApi\bin\Debug\net5.0\runtimes\osx\native\libmongocrypt.dylib
+C:\Users\dnadi\Desktop\NBA PROJ\api\MongoApi\MongoApi\bin\Debug\net5.0\runtimes\win\native\mongocrypt.dll
+C:\Users\dnadi\Desktop\NBA PROJ\api\MongoApi\MongoApi\obj\Debug\net5.0\staticwebassets\MongoApi.StaticWebAssets.Manifest.cache
+C:\Users\dnadi\Desktop\NBA PROJ\api\MongoApi\MongoApi\obj\Debug\net5.0\staticwebassets\MongoApi.StaticWebAssets.xml
+C:\Users\dnadi\Desktop\NBA PROJ\api\MongoApi\MongoApi\obj\Debug\net5.0\scopedcss\bundle\MongoApi.styles.css
+C:\Users\dnadi\Desktop\NBA PROJ\api\MongoApi\MongoApi\obj\Debug\net5.0\MongoApi.RazorTargetAssemblyInfo.cache
+C:\Users\dnadi\Desktop\NBA PROJ\api\MongoApi\MongoApi\obj\Debug\net5.0\MongoApi.csproj.CopyComplete
+C:\Users\dnadi\Desktop\NBA PROJ\api\MongoApi\MongoApi\obj\Debug\net5.0\MongoApi.dll
+C:\Users\dnadi\Desktop\NBA PROJ\api\MongoApi\MongoApi\obj\Debug\net5.0\ref\MongoApi.dll
+C:\Users\dnadi\Desktop\NBA PROJ\api\MongoApi\MongoApi\obj\Debug\net5.0\MongoApi.pdb
+C:\Users\dnadi\Desktop\NBA PROJ\api\MongoApi\MongoApi\obj\Debug\net5.0\MongoApi.genruntimeconfig.cache
+C:\Users\dnadi\Desktop\APIs\MongoApi\MongoApi\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\dnadi\Desktop\APIs\MongoApi\MongoApi\bin\Debug\net5.0\appsettings.json
+C:\Users\dnadi\Desktop\APIs\MongoApi\MongoApi\bin\Debug\net5.0\MongoApi.exe
+C:\Users\dnadi\Desktop\APIs\MongoApi\MongoApi\bin\Debug\net5.0\MongoApi.deps.json
+C:\Users\dnadi\Desktop\APIs\MongoApi\MongoApi\bin\Debug\net5.0\MongoApi.runtimeconfig.json
+C:\Users\dnadi\Desktop\APIs\MongoApi\MongoApi\bin\Debug\net5.0\MongoApi.runtimeconfig.dev.json
+C:\Users\dnadi\Desktop\APIs\MongoApi\MongoApi\bin\Debug\net5.0\MongoApi.dll
+C:\Users\dnadi\Desktop\APIs\MongoApi\MongoApi\bin\Debug\net5.0\ref\MongoApi.dll
+C:\Users\dnadi\Desktop\APIs\MongoApi\MongoApi\bin\Debug\net5.0\MongoApi.pdb
+C:\Users\dnadi\Desktop\APIs\MongoApi\MongoApi\bin\Debug\net5.0\DnsClient.dll
+C:\Users\dnadi\Desktop\APIs\MongoApi\MongoApi\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\dnadi\Desktop\APIs\MongoApi\MongoApi\bin\Debug\net5.0\MongoDB.Bson.dll
+C:\Users\dnadi\Desktop\APIs\MongoApi\MongoApi\bin\Debug\net5.0\MongoDB.Driver.dll
+C:\Users\dnadi\Desktop\APIs\MongoApi\MongoApi\bin\Debug\net5.0\MongoDB.Driver.Core.dll
+C:\Users\dnadi\Desktop\APIs\MongoApi\MongoApi\bin\Debug\net5.0\MongoDB.Libmongocrypt.dll
+C:\Users\dnadi\Desktop\APIs\MongoApi\MongoApi\bin\Debug\net5.0\SharpCompress.dll
+C:\Users\dnadi\Desktop\APIs\MongoApi\MongoApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\dnadi\Desktop\APIs\MongoApi\MongoApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\dnadi\Desktop\APIs\MongoApi\MongoApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\dnadi\Desktop\APIs\MongoApi\MongoApi\bin\Debug\net5.0\runtimes\win\native\libzstd.dll
+C:\Users\dnadi\Desktop\APIs\MongoApi\MongoApi\bin\Debug\net5.0\runtimes\win\native\snappy32.dll
+C:\Users\dnadi\Desktop\APIs\MongoApi\MongoApi\bin\Debug\net5.0\runtimes\win\native\snappy64.dll
+C:\Users\dnadi\Desktop\APIs\MongoApi\MongoApi\bin\Debug\net5.0\runtimes\linux\native\libmongocrypt.so
+C:\Users\dnadi\Desktop\APIs\MongoApi\MongoApi\bin\Debug\net5.0\runtimes\osx\native\libmongocrypt.dylib
+C:\Users\dnadi\Desktop\APIs\MongoApi\MongoApi\bin\Debug\net5.0\runtimes\win\native\mongocrypt.dll
+C:\Users\dnadi\Desktop\APIs\MongoApi\MongoApi\obj\Debug\net5.0\MongoApi.csprojAssemblyReference.cache
+C:\Users\dnadi\Desktop\APIs\MongoApi\MongoApi\obj\Debug\net5.0\MongoApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dnadi\Desktop\APIs\MongoApi\MongoApi\obj\Debug\net5.0\MongoApi.AssemblyInfoInputs.cache
+C:\Users\dnadi\Desktop\APIs\MongoApi\MongoApi\obj\Debug\net5.0\MongoApi.AssemblyInfo.cs
+C:\Users\dnadi\Desktop\APIs\MongoApi\MongoApi\obj\Debug\net5.0\MongoApi.csproj.CoreCompileInputs.cache
+C:\Users\dnadi\Desktop\APIs\MongoApi\MongoApi\obj\Debug\net5.0\MongoApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\dnadi\Desktop\APIs\MongoApi\MongoApi\obj\Debug\net5.0\MongoApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\dnadi\Desktop\APIs\MongoApi\MongoApi\obj\Debug\net5.0\staticwebassets\MongoApi.StaticWebAssets.Manifest.cache
+C:\Users\dnadi\Desktop\APIs\MongoApi\MongoApi\obj\Debug\net5.0\staticwebassets\MongoApi.StaticWebAssets.xml
+C:\Users\dnadi\Desktop\APIs\MongoApi\MongoApi\obj\Debug\net5.0\scopedcss\bundle\MongoApi.styles.css
+C:\Users\dnadi\Desktop\APIs\MongoApi\MongoApi\obj\Debug\net5.0\MongoApi.RazorTargetAssemblyInfo.cache
+C:\Users\dnadi\Desktop\APIs\MongoApi\MongoApi\obj\Debug\net5.0\MongoApi.csproj.CopyComplete
+C:\Users\dnadi\Desktop\APIs\MongoApi\MongoApi\obj\Debug\net5.0\MongoApi.dll
+C:\Users\dnadi\Desktop\APIs\MongoApi\MongoApi\obj\Debug\net5.0\ref\MongoApi.dll
+C:\Users\dnadi\Desktop\APIs\MongoApi\MongoApi\obj\Debug\net5.0\MongoApi.pdb
+C:\Users\dnadi\Desktop\APIs\MongoApi\MongoApi\obj\Debug\net5.0\MongoApi.genruntimeconfig.cache
+C:\Users\dnadi\Desktop\Test\MongoApi\MongoApi\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\dnadi\Desktop\Test\MongoApi\MongoApi\bin\Debug\net5.0\appsettings.json
+C:\Users\dnadi\Desktop\Test\MongoApi\MongoApi\bin\Debug\net5.0\MongoApi.exe
+C:\Users\dnadi\Desktop\Test\MongoApi\MongoApi\bin\Debug\net5.0\MongoApi.deps.json
+C:\Users\dnadi\Desktop\Test\MongoApi\MongoApi\bin\Debug\net5.0\MongoApi.runtimeconfig.json
+C:\Users\dnadi\Desktop\Test\MongoApi\MongoApi\bin\Debug\net5.0\MongoApi.runtimeconfig.dev.json
+C:\Users\dnadi\Desktop\Test\MongoApi\MongoApi\bin\Debug\net5.0\MongoApi.dll
+C:\Users\dnadi\Desktop\Test\MongoApi\MongoApi\bin\Debug\net5.0\ref\MongoApi.dll
+C:\Users\dnadi\Desktop\Test\MongoApi\MongoApi\bin\Debug\net5.0\MongoApi.pdb
+C:\Users\dnadi\Desktop\Test\MongoApi\MongoApi\bin\Debug\net5.0\DnsClient.dll
+C:\Users\dnadi\Desktop\Test\MongoApi\MongoApi\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\dnadi\Desktop\Test\MongoApi\MongoApi\bin\Debug\net5.0\MongoDB.Bson.dll
+C:\Users\dnadi\Desktop\Test\MongoApi\MongoApi\bin\Debug\net5.0\MongoDB.Driver.dll
+C:\Users\dnadi\Desktop\Test\MongoApi\MongoApi\bin\Debug\net5.0\MongoDB.Driver.Core.dll
+C:\Users\dnadi\Desktop\Test\MongoApi\MongoApi\bin\Debug\net5.0\MongoDB.Libmongocrypt.dll
+C:\Users\dnadi\Desktop\Test\MongoApi\MongoApi\bin\Debug\net5.0\SharpCompress.dll
+C:\Users\dnadi\Desktop\Test\MongoApi\MongoApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\dnadi\Desktop\Test\MongoApi\MongoApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\dnadi\Desktop\Test\MongoApi\MongoApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\dnadi\Desktop\Test\MongoApi\MongoApi\bin\Debug\net5.0\runtimes\win\native\libzstd.dll
+C:\Users\dnadi\Desktop\Test\MongoApi\MongoApi\bin\Debug\net5.0\runtimes\win\native\snappy32.dll
+C:\Users\dnadi\Desktop\Test\MongoApi\MongoApi\bin\Debug\net5.0\runtimes\win\native\snappy64.dll
+C:\Users\dnadi\Desktop\Test\MongoApi\MongoApi\bin\Debug\net5.0\runtimes\linux\native\libmongocrypt.so
+C:\Users\dnadi\Desktop\Test\MongoApi\MongoApi\bin\Debug\net5.0\runtimes\osx\native\libmongocrypt.dylib
+C:\Users\dnadi\Desktop\Test\MongoApi\MongoApi\bin\Debug\net5.0\runtimes\win\native\mongocrypt.dll
+C:\Users\dnadi\Desktop\Test\MongoApi\MongoApi\obj\Debug\net5.0\MongoApi.csprojAssemblyReference.cache
+C:\Users\dnadi\Desktop\Test\MongoApi\MongoApi\obj\Debug\net5.0\MongoApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dnadi\Desktop\Test\MongoApi\MongoApi\obj\Debug\net5.0\MongoApi.AssemblyInfoInputs.cache
+C:\Users\dnadi\Desktop\Test\MongoApi\MongoApi\obj\Debug\net5.0\MongoApi.AssemblyInfo.cs
+C:\Users\dnadi\Desktop\Test\MongoApi\MongoApi\obj\Debug\net5.0\MongoApi.csproj.CoreCompileInputs.cache
+C:\Users\dnadi\Desktop\Test\MongoApi\MongoApi\obj\Debug\net5.0\MongoApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\dnadi\Desktop\Test\MongoApi\MongoApi\obj\Debug\net5.0\MongoApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\dnadi\Desktop\Test\MongoApi\MongoApi\obj\Debug\net5.0\staticwebassets\MongoApi.StaticWebAssets.Manifest.cache
+C:\Users\dnadi\Desktop\Test\MongoApi\MongoApi\obj\Debug\net5.0\staticwebassets\MongoApi.StaticWebAssets.xml
+C:\Users\dnadi\Desktop\Test\MongoApi\MongoApi\obj\Debug\net5.0\scopedcss\bundle\MongoApi.styles.css
+C:\Users\dnadi\Desktop\Test\MongoApi\MongoApi\obj\Debug\net5.0\MongoApi.RazorTargetAssemblyInfo.cache
+C:\Users\dnadi\Desktop\Test\MongoApi\MongoApi\obj\Debug\net5.0\MongoApi.csproj.CopyComplete
+C:\Users\dnadi\Desktop\Test\MongoApi\MongoApi\obj\Debug\net5.0\MongoApi.dll
+C:\Users\dnadi\Desktop\Test\MongoApi\MongoApi\obj\Debug\net5.0\ref\MongoApi.dll
+C:\Users\dnadi\Desktop\Test\MongoApi\MongoApi\obj\Debug\net5.0\MongoApi.pdb
+C:\Users\dnadi\Desktop\Test\MongoApi\MongoApi\obj\Debug\net5.0\MongoApi.genruntimeconfig.cache
