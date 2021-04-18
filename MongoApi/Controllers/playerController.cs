@@ -25,6 +25,8 @@ namespace MongoApi.Controllers
 
         }
 
+        //Todo get Headers(fields)
+
         //Get All Players
         [HttpGet]
         //public  IEnumerable<Player> Get([FromQuery] PaginationFilter filter)

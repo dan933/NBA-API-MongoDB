@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dnadi\\Desktop\\Test\\MongoApi\\MongoApi\\MongoApi.csproj": {}
+    "C:\\Users\\dnadi\\Desktop\\APIs\\MongoApi\\MongoApi\\MongoApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dnadi\\Desktop\\Test\\MongoApi\\MongoApi\\MongoApi.csproj": {
+    "C:\\Users\\dnadi\\Desktop\\APIs\\MongoApi\\MongoApi\\MongoApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dnadi\\Desktop\\Test\\MongoApi\\MongoApi\\MongoApi.csproj",
+        "projectUniqueName": "C:\\Users\\dnadi\\Desktop\\APIs\\MongoApi\\MongoApi\\MongoApi.csproj",
         "projectName": "MongoApi",
-        "projectPath": "C:\\Users\\dnadi\\Desktop\\Test\\MongoApi\\MongoApi\\MongoApi.csproj",
+        "projectPath": "C:\\Users\\dnadi\\Desktop\\APIs\\MongoApi\\MongoApi\\MongoApi.csproj",
         "packagesPath": "C:\\Users\\dnadi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dnadi\\Desktop\\Test\\MongoApi\\MongoApi\\obj\\",
+        "outputPath": "C:\\Users\\dnadi\\Desktop\\APIs\\MongoApi\\MongoApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dnadi\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IlN1+axiukuv1ZFfjo8g5LALZfU/KaP0+rpDmqalRWPQEfOMGXhKI+w8mHhOlVlUsG2yCObUS3dBtww5aCQO1g==",
+  "dgSpecHash": "5uIukI5xDnWpPmWNtzXKq9JZTRKwBbSZ+vAzt5aibXnUrzbSwfuMAG6zYcWR6H3JXPMZVyfZyIixNFJ/poZR9Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\dnadi\\Desktop\\Test\\MongoApi\\MongoApi\\MongoApi.csproj",
+  "projectFilePath": "C:\\Users\\dnadi\\Desktop\\APIs\\MongoApi\\MongoApi\\MongoApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dnadi\\.nuget\\packages\\dnsclient\\1.4.0\\dnsclient.1.4.0.nupkg.sha512",
     "C:\\Users\\dnadi\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",

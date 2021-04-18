@@ -54,10 +54,28 @@ namespace MongoApi.Controllers
         }
 
         [HttpGet("getallteams")]
-        public object GetallTeams()
+        public object GetallTeams([FromQuery] PaginationFilter pagination)
         {
-            var data = _TeamCollection.Find(t => true).ToList();
-            return data;
+            var validFilter = new PaginationFilter(pagination.PageNumber, pagination.PageSize);
+            var skip = (validFilter.PageNumber - 1) * validFilter.PageSize;
+            var page = validFilter.PageSize;
+
+            var data = _TeamCollection
+                .Find(t => true)
+                .SortBy(t => t.TeamName)
+                .Skip(skip)
+                .Limit(page)
+                .ToList();
+
+            var totalRecords =
+                    _TeamCollection.Find(t => true)
+                    .CountDocuments();
+
+            var pages = (decimal)totalRecords / (decimal)page;
+            pages = pages % 1 != 0 ? Decimal.ToInt32(pages += 1) : pages;
+
+
+            return new { data, pages };           
         }
         
             
@@ -114,18 +132,39 @@ namespace MongoApi.Controllers
 
 
         [HttpGet("getplayersfromteam")]
-        public object GetPlayers([FromQuery] string TeamID)
-        {             
+        public object GetPlayers([FromQuery] PaginationFilter pagination, string TeamID)
+        {
 
-             var filter = Builders<Team>.Filter.Eq("_id",  ObjectId.Parse(TeamID));            
             
+            pagination.PageSize = pagination.PageSize == 0 ? 30 : pagination.PageSize;
+
+            var validFilter = new PaginationFilter( pagination.PageNumber, pagination.PageSize);
+            var skip = (validFilter.PageNumber - 1) * validFilter.PageSize;
+            var page = validFilter.PageSize;
+
+            var filter = Builders<Team>.Filter.Eq("_id",  ObjectId.Parse(TeamID));            
             var data = _TeamCollection.Find(filter).Project(t => t.Players).FirstOrDefault();
                         
-            var PlayerFromTeam = Builders<Player>.Filter.In(p => p.ID, data);            
+            var PlayerFromTeam = Builders<Player>.Filter.In(p => p.ID, data);  
+            
+            var Players = _PlayerCollection
+                          .Find(PlayerFromTeam)
+                          .SortBy(s => s.FIRSTNAME)
+                          .Skip(skip)
+                          .Limit(page)
+                          .ToList();
 
-            return _PlayerCollection.Find(PlayerFromTeam).ToList();
+            var totalRecords =
+                    _PlayerCollection.Find(PlayerFromTeam)
+                    .CountDocuments();
 
-            //Todo Player sorting 
+            var pages = (decimal)totalRecords / (decimal)page;
+            pages = pages % 1 != 0 ? Decimal.ToInt32(pages += 1) : pages;
+
+
+            return new { Players, pages };
+
+            //Todo Player sorting             
         }
 
 
