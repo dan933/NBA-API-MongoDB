@@ -55,9 +55,28 @@ namespace MongoApi.Controllers
             return new { data, pages };
 
         }
-        
-        //Search Players
-        [HttpGet("/searchPlayer")]
+
+        //get stat headers
+        [HttpGet("/getheaders")]
+        public object GetHeaders()
+        {           
+            //Get Headers Endpoint can be improved
+            //look more into how to get headers from Mongo surely there is a way
+            var HeaderList = new List<string>();
+
+            Type type = typeof(Player);
+            var propertyInfo = type.GetProperties();
+            
+            foreach(var key in propertyInfo)
+            {
+                HeaderList.Add(key.Name);
+            }
+
+            return HeaderList;
+
+        }
+            //Search Players
+            [HttpGet("/searchPlayer")]
         public object SearchPlayer([FromQuery] SearchPaginationFilter filter,[FromQuery] Sorting sort)
         {
             filter.PageSize = filter.PageSize == 0 ? 30 : filter.PageSize;
