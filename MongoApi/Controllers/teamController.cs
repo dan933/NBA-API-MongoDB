@@ -53,16 +53,40 @@ namespace MongoApi.Controllers
 
         }
 
-        [HttpGet("getallteams")]
-        public object GetallTeams([FromQuery] PaginationFilter pagination)
+        //Remove Team
+        [HttpGet("removeteam")]
+        public string RemoveTeam([FromQuery] string TeamName)
+        {
+            var isTeam = Builders<Team>.Filter.Regex(T => T.TeamName, new BsonRegularExpression($"/{TeamName}/i"));
+
+            var data = _TeamCollection.Find(isTeam).FirstOrDefault();
+
+            if (data != null)
+            {
+                var document = new BsonDocument { { "TeamName", TeamName }};
+                _AddTeamCollection.DeleteOne(document);
+
+
+                return $"{TeamName} Removed.";
+            }
+            return $"{TeamName} Doesnot exist.";
+        }
+
+            [HttpGet("getallteams")]
+        public object GetallTeams([FromQuery] PaginationFilter pagination, int AscOrDesc)
         {
             var validFilter = new PaginationFilter(pagination.PageNumber, pagination.PageSize);
             var skip = (validFilter.PageNumber - 1) * validFilter.PageSize;
             var page = validFilter.PageSize;
 
+            //sort logic
+            AscOrDesc = AscOrDesc == 0 ? 1 : AscOrDesc;
+            SortDefinition<Team> SortAscDsc = new BsonDocument("TeamName", AscOrDesc);
+
             var data = _TeamCollection
                 .Find(t => true)
-                .SortBy(t => t.TeamName)
+                .Project(t => t.TeamName)
+                .Sort(SortAscDsc)
                 .Skip(skip)
                 .Limit(page)
                 .ToList();
@@ -73,7 +97,6 @@ namespace MongoApi.Controllers
 
             var pages = (decimal)totalRecords / (decimal)page;
             pages = pages % 1 != 0 ? Decimal.ToInt32(pages += 1) : pages;
-
 
             return new { data, pages };           
         }
@@ -132,24 +155,29 @@ namespace MongoApi.Controllers
 
 
         [HttpGet("getplayersfromteam")]
-        public object GetPlayers([FromQuery] PaginationFilter pagination, string TeamID)
+        public object GetPlayers([FromQuery] PaginationFilter pagination, string TeamID, [FromQuery] Sorting sort)
         {
-
-            
+            //Pagination
             pagination.PageSize = pagination.PageSize == 0 ? 30 : pagination.PageSize;
 
             var validFilter = new PaginationFilter( pagination.PageNumber, pagination.PageSize);
             var skip = (validFilter.PageNumber - 1) * validFilter.PageSize;
             var page = validFilter.PageSize;
 
+            //Team filter
             var filter = Builders<Team>.Filter.Eq("_id",  ObjectId.Parse(TeamID));            
             var data = _TeamCollection.Find(filter).Project(t => t.Players).FirstOrDefault();
                         
-            var PlayerFromTeam = Builders<Player>.Filter.In(p => p.ID, data);  
-            
+            //Selecet all Players from team 
+            var PlayerFromTeam = Builders<Player>.Filter.In(p => p.ID, data);
+
+            //Sorting 
+            var SortFilter = new Sorting(sort.SortField, sort.AscOrDesc);
+            SortDefinition<Player> SortAscDsc = new BsonDocument(SortFilter.SortField, SortFilter.AscOrDesc);
+
             var Players = _PlayerCollection
                           .Find(PlayerFromTeam)
-                          .SortBy(s => s.FIRSTNAME)
+                          .Sort(SortAscDsc)
                           .Skip(skip)
                           .Limit(page)
                           .ToList();
@@ -164,7 +192,7 @@ namespace MongoApi.Controllers
 
             return new { Players, pages };
 
-            //Todo Player sorting             
+                        
         }
 
 

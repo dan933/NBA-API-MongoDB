@@ -4,11 +4,9 @@ using Microsoft.Extensions.Logging;
 using MongoDB.Bson;
 using MongoDB.Driver;
 using MongoApi.Models;
+using MongoDB.Driver.Linq;
 using System;
 using System.Collections.Generic;
-
-using System.Net.Http;
-using System.Threading.Tasks;
 
 namespace MongoApi.Controllers
 {
@@ -17,34 +15,39 @@ namespace MongoApi.Controllers
     public class PlayerController : ControllerBase
     {
         private IMongoCollection<Player> _playerCollection;
+        private IMongoCollection<BsonDocument> _AddplayerCollection;
 
         public PlayerController(IMongoClient client)
         {
             var database = client.GetDatabase("NBA");
             _playerCollection = database.GetCollection<Player>("Players");
+            _AddplayerCollection = database.GetCollection<BsonDocument>("Players");
 
         }
 
-        //Todo get Headers(fields)
+        
 
-        //Get All Players
+        ////Get All Players
         [HttpGet]
         //public  IEnumerable<Player> Get([FromQuery] PaginationFilter filter)
-        public object Get([FromQuery] PaginationFilter filter)
+        public object Get([FromQuery] PaginationFilter filter,[FromQuery] Sorting sort)
         {
-
             var validFilter = new PaginationFilter(filter.PageNumber, filter.PageSize);
             var skip = (validFilter.PageNumber - 1) * validFilter.PageSize;
             var PageSize = validFilter.PageSize;
 
-            var data = _playerCollection
-                .Find(s => true)
-                .SortBy(s => s.FIRSTNAME)
-                .Skip(skip)
-                .Limit(PageSize)
-                .ToList();
+            var SortFilter = new Sorting(sort.SortField, sort.AscOrDesc);
 
+            //user input 1 for ascending and -1 for descending
+            SortDefinition<Player> SortAscDsc = new BsonDocument(SortFilter.SortField , SortFilter.AscOrDesc);
+                  
+            var data = _playerCollection.Find(new BsonDocument())
+                                        .Sort(SortAscDsc)        
+                                        .Skip(skip)
+                                        .Limit(PageSize)
+                                        .ToList();
             
+            //Total Number of Pages
             var totalRecords = _playerCollection.Find(s => true).CountDocuments();
             var pages = (decimal)totalRecords / (decimal)PageSize;
             pages = pages % 1 != 0 ? Decimal.ToInt32(pages += 1) : pages;
@@ -52,27 +55,36 @@ namespace MongoApi.Controllers
             return new { data, pages };
 
         }
-
+        
         //Search Players
         [HttpGet("/searchPlayer")]
-        public object SearchPlayer([FromQuery] SearchPaginationFilter filter)
+        public object SearchPlayer([FromQuery] SearchPaginationFilter filter,[FromQuery] Sorting sort)
         {
             filter.PageSize = filter.PageSize == 0 ? 30 : filter.PageSize;
 
             var validFilter = new SearchPaginationFilter(filter.searchstring, filter.PageNumber, filter.PageSize);
             var skip = (validFilter.PageNumber - 1) * validFilter.PageSize;
             var page = validFilter.PageSize;
+            
 
             string[]? splitString = filter.searchstring?.Split(' ');
 
+            var SortFilter = new Sorting(sort.SortField, sort.AscOrDesc);
+
+            SortDefinition<Player> SortAscDsc = new BsonDocument(SortFilter.SortField, SortFilter.AscOrDesc);
+
             if (splitString?.Length == 2)
             {
-                var FirstNameFilter = Builders<Player>.Filter.Regex(p => p.FIRSTNAME, new BsonRegularExpression($"/^{splitString[0]}.*/i"));
-                var LastNameFilter = Builders<Player>.Filter.Regex(p => p.LASTNAME, new BsonRegularExpression($"/^{splitString[1]}.*/i"));
-                var CombinedFilter = Builders<Player>.Filter.And(FirstNameFilter, LastNameFilter);
+                var FirstNameFilter = Builders<Player>.Filter
+                    .Regex(p => p.FIRSTNAME, new BsonRegularExpression($"/^{splitString[0]}.*/i"));
+                var LastNameFilter = Builders<Player>.Filter
+                    .Regex(p => p.LASTNAME, new BsonRegularExpression($"/^{splitString[1]}.*/i"));
+                var CombinedFilter = Builders<Player>.Filter
+                    .And(FirstNameFilter, LastNameFilter);
+                
 
                 var data = _playerCollection.Find(CombinedFilter)
-                    .SortBy(s => s.FIRSTNAME)
+                    .Sort(SortAscDsc)
                     .Skip(skip)
                     .Limit(page)
                     .ToList();
@@ -93,13 +105,13 @@ namespace MongoApi.Controllers
             {
                 var FirstNameFilter = Builders<Player>.Filter.Regex(p => p.FIRSTNAME, new BsonRegularExpression($"/^{filter.searchstring}.*/i"));
 
-#nullable enable
+
                 var LastNameFilter = Builders<Player>.Filter.Regex(p => p.LASTNAME, new BsonRegularExpression($"/(^{filter.searchstring}.*)|(\\s{filter.searchstring}.*)/i"));
                 var CombinedFilter = Builders<Player>.Filter.Or(FirstNameFilter, LastNameFilter);
 
 
                 var data = _playerCollection.Find(CombinedFilter)
-                    .SortBy(s => s.FIRSTNAME)
+                    .Sort(SortAscDsc)
                     .Skip(skip)
                     .Limit(page)
                     .ToList();

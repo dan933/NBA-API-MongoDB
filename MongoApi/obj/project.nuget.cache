@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "5uIukI5xDnWpPmWNtzXKq9JZTRKwBbSZ+vAzt5aibXnUrzbSwfuMAG6zYcWR6H3JXPMZVyfZyIixNFJ/poZR9Q==",
+  "dgSpecHash": "EzdU4+MPkijEZKXDg6w+I+0cD/bgXjPuMQigb4+s8bbmcsyuhJzUJ9lPiiWwG9xDFSHkuW92HypXA5jBVWZ20A==",
   "success": true,
   "projectFilePath": "C:\\Users\\dnadi\\Desktop\\APIs\\MongoApi\\MongoApi\\MongoApi.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\dnadi\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\dnadi\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.2\\microsoft.netcore.platforms.2.1.2.nupkg.sha512",
     "C:\\Users\\dnadi\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\dnadi\\.nuget\\packages\\mongocsharpdriver\\2.12.2\\mongocsharpdriver.2.12.2.nupkg.sha512",
     "C:\\Users\\dnadi\\.nuget\\packages\\mongodb.bson\\2.12.2\\mongodb.bson.2.12.2.nupkg.sha512",
     "C:\\Users\\dnadi\\.nuget\\packages\\mongodb.driver\\2.12.2\\mongodb.driver.2.12.2.nupkg.sha512",
     "C:\\Users\\dnadi\\.nuget\\packages\\mongodb.driver.core\\2.12.2\\mongodb.driver.core.2.12.2.nupkg.sha512",

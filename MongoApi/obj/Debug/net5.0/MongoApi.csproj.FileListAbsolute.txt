@@ -121,3 +121,4 @@ C:\Users\dnadi\Desktop\Test\MongoApi\MongoApi\obj\Debug\net5.0\MongoApi.dll
 C:\Users\dnadi\Desktop\Test\MongoApi\MongoApi\obj\Debug\net5.0\ref\MongoApi.dll
 C:\Users\dnadi\Desktop\Test\MongoApi\MongoApi\obj\Debug\net5.0\MongoApi.pdb
 C:\Users\dnadi\Desktop\Test\MongoApi\MongoApi\obj\Debug\net5.0\MongoApi.genruntimeconfig.cache
+C:\Users\dnadi\Desktop\APIs\MongoApi\MongoApi\bin\Debug\net5.0\MongoDB.Driver.Legacy.dll
