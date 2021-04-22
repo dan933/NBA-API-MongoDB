@@ -72,7 +72,7 @@ namespace MongoApi.Controllers
                 HeaderList.Add(key.Name);
             }
 
-            return HeaderList;
+            return HeaderList.ToJson();
 
         }
             //Search Players
