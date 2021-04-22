@@ -83,9 +83,13 @@ namespace MongoApi.Controllers
             AscOrDesc = AscOrDesc == 0 ? 1 : AscOrDesc;
             SortDefinition<Team> SortAscDsc = new BsonDocument("TeamName", AscOrDesc);
 
+            var projection = Builders<Team>.Projection
+                .Include(t => t.ID)
+                .Include(t => t.TeamName);
+
             var data = _TeamCollection
                 .Find(t => true)
-                .Project(t => t.TeamName)
+                .Project(t => new { t.ID, t.TeamName })                
                 .Sort(SortAscDsc)
                 .Skip(skip)
                 .Limit(page)
