@@ -113,10 +113,17 @@ namespace MongoApi.Controllers
                 
 
                 var playerFilter = Builders<Player>.Filter.Eq("_id", ObjectId.Parse(PlayerID));
+
                 var teamFilter = Builders<Team>.Filter.Eq("_id", ObjectId.Parse(TeamID));
 
+            //check Player Count
+            var PlayerCount = _TeamCollection.Find(teamFilter).Project(t => t.Players.Length).ToList();
+
+            if (PlayerCount[0] >= 15) { return "Player Limit Reached";}
+
                 var playerdata = _PlayerCollection.Find(playerFilter).FirstOrDefault();
-                var teamdata = _TeamCollection.Find(teamFilter).FirstOrDefault();                
+                var teamdata = _TeamCollection.Find(teamFilter).FirstOrDefault();     
+                           
 
                 if (playerdata != null && teamdata !=null)
                     {
@@ -154,7 +161,7 @@ namespace MongoApi.Controllers
                     return "Player removed from Team";
 
                 }
-                return "Something went wrong Player was not removed from team";
+                return "Player was not in Team";
             }
 
 
